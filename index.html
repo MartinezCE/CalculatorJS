@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" media="screen" />
+    <script src="./js/index.js" type="text/javascript" defer></script>
+    <script src="./js/Calculator.js" type="text/javascript"></script>
+    <script src="./js/Display.js" type="text/javascript"></script>
+    <link rel="icon"
+        href="https://help.apple.com/assets/61E87C373FEFE261382782AC/61E87C383FEFE261382782B3/en_AU/f19c7e914f0adb59c0833d00d09f1ea7.png" />
+    <link href="./styles/styles.css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div class="calculator">
+
+            <div class="display">
+                <div id="previousValue"></div>
+                <div id="currentValue"></div>
+            </div>
+
+
+            <button class="clearAll col-2" onclick="display.clearAll()">c</button>
+            <button class="clear" onclick="display.clear()">&larr;</button>
+            <button class="operator" value="division">%</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" value="multiply">X</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" value="subtraction">-</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" value="sum">+</button>
+            <button class="number col-2">0</button>
+            <button class="number">.</button>
+            <button class="operator" value="=" onclick="display.calculate()">=</button>
+
+        </div>
+    </section>
+</body>
+
+</html>
